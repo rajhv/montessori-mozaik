@@ -18,6 +18,24 @@
   </head>
 
   <body>
+    <div class="row">
+      <div style="text-align:center">
+        <%= image_tag asset_path('Montessori-mozaik_logo.png') %>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="collapse navbar-collapse" id="navbar-collapsable">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Montessori Mozaik</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><%= link_to 'Domov', root_path %></li>
+          <li><%= link_to 'Maria Montessori', "/static_pages/maria_montessori" %></li>
+          <li><%= link_to 'O meni', "/static_pages/o_meni" %></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container-fluid">
         <% if notice %>
           <p class="alert alert-success"><%= notice %></p>
