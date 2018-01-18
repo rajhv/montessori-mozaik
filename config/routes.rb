@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
 
   # static pages
-    get "/static_pages/:page" => "static_pages#show"
+    get ":page" => "static_pages#show"
     # get 'static_pages/o_meni'
     # get 'static_pages/maria_montessori'
   # end static pages
